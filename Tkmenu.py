@@ -2,7 +2,7 @@
 
 from tkinter import *
 from database import *
-import database
+#import database
 #import quotess
 from time import *
 
