@@ -263,9 +263,11 @@ def updatecmd():
     subadmn = Toplevel()
     subadmn.geometry("800x650")
     subadmn.title("Update")
-    filename1 = PhotoImage(file = "abcdef.png")
+    filename1 = PhotoImage(file = "abcdef1.png")
     background_label1 = Label(subadmn, image=filename1)
     background_label1.place(x=0, y=0, relwidth=1, relheight=1)
+    
+  
 
     
     button2=Button(subadmn,text='Update Category',width=20, height=1,font=('Helvetica', '14'),command=update_category,)
@@ -282,6 +284,9 @@ def updatecmd():
     button7.place(rely=0.64, relx=0.5, anchor=CENTER)
     button8=Button(subadmn,text='Update Password',width=20, height=1,font=('Helvetica', '14'),command=update_password,)
     button8.place(rely=0.72, relx=0.5, anchor=CENTER)
+
+    
+    subadmn.mainloop()
 
 
 
@@ -303,7 +308,7 @@ def adminpower(a_ID,a_password):
         background_label = Label(admn, image=filename)
         background_label.place(x=0, y=0, relwidth=1, relheight=1)
 
-
+    
         
         
         button2=Button(admn,text='All ID', width=25, height=2,font=('Helvetica', '14'),command=all_details,)
